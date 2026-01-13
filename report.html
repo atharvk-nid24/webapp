@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Incident</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Report an Incident</h2>
+
+<form id="reportForm">
+  <label>What happened?</label>
+  <select id="type">
+    <option>Verbal Abuse</option>
+    <option>Harassment</option>
+    <option>Threat</option>
+    <option>Other</option>
+  </select>
+
+  <label>Who was involved?</label>
+  <select id="who">
+    <option>Customer</option>
+    <option>Manager</option>
+    <option>Co-worker</option>
+  </select>
+
+  <label>Describe (optional)</label>
+  <textarea id="details"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script src="js/firebase.js"></script>
+<script src="js/report.js"></script>
+
+</body>
+</html>
